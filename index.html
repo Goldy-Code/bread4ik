@@ -12,19 +12,42 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
     <title>Document</title>
   </head>
   <body>
-    <header>
-      
-    </header>
-    <div class="clip">
-      <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>
-      <i class="fa-solid ">free</i>
-    </div>
-    <!-- card -->
+    <!--Nav -->
+    <input type="checkbox" id="toggeler" />
+    <input type="checkbox" id="lupa" />
+    <nav>
+      <div class="logo">
+        <img src="images/bread.png" alt="bread" />
+        <span>Buy a Bread this is threat</span>
+      </div>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="">About Us</a>
+        <a href="">bla-bla</a>
+        <a href="">bla-bla</a>
+      </div>
+
+      <div class="icons">
+        <label for="lupa">
+          <i class="fa-solid fa-magnifying-glass"
+            ><input class="lupa" type="text" placeholder="Search..." />
+          </i>
+        </label>
+
+        <label class="burger" for="toggeler">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+        </label>
+      </div>
+    </nav>
+
     <div class="container">
+      <!-- card -->
       <div class="card">
         <div class="card__inner">
           <div class="front face">
@@ -38,6 +61,7 @@
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <button class="flip flip-me">flip me</button>
+            <img class="gluten-logo" src="images/gluten-free.png" alt="" />
           </div>
           <div class="back face">
             <div class="heading">
@@ -67,10 +91,18 @@
             <div class="heading">
               <h2>button</h2>
             </div>
+
+            <img src="images/123h.jpg" alt="bread" class="bread" />
+
             <div class="description">
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <button class="flip flip-me">flip me</button>
+            <!-- watermark -->
+            <div class="clip">
+              <i class="fa-solid fa-wheat-awn-circle-exclamation free"></i>
+              <i class="fa-solid free">free</i>
+            </div>
           </div>
           <div class="back face">
             <div class="heading">
@@ -97,8 +129,8 @@
       <div class="card">
         <div class="card__inner">
           <div class="front face">
-            <div class="heading">
-              <h2>button</h2>
+            <div class="the-bread">
+              <img src="images/123h.jpg" alt="bread" class="bread" />
             </div>
             <div class="description">
               <p>Lorem ipsum dolor sit amet.</p>

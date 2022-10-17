@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #fff;
 }
 
 button {
@@ -11,40 +12,155 @@ button {
   cursor: pointer;
 }
 
-/* Header */
-header{
+/* Header NAV */
+.logo,
+.icons,
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  position: relative;
+  justify-content: space-between;
+
   width: 100%;
-  height: 100px;
-background-color: rgba(0, 0, 0, 0.415);
+  /* height: 100px; */
+  height: min-content;
+  padding: 15px 30px;
+  background-color: rgb(60, 54, 54);
+}
+
+a {
+  padding: 10px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+a:hover {
+  background-color: rgba(255, 217, 0, 0.7);
+}
+
+.fa-magnifying-glass {
+  position: relative;
+  font-size: 20px;
+}
+
+#toggeler,
+#lupa {
+  display: none;
+}
+
+#lupa:checked ~ nav .icons label .lupa {
+  display: none;
+}
+
+.lupa {
+  position: absolute;
+  left: -205px;
+  top: -3.5px;
+  width: 200px;
+
+  padding: 4px 6px;
+  border-radius: 10px;
+  /* outline: none; */
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.lines {
+  width: 25px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+@media (max-width: 800px) {
+  /* .links {
+    position: absolute;
+    left: 0;
+    top: 99px;
+    display: grid;
+    height: 200%;
+    width: 100%;
+    padding: 20px;
+    z-index: -1;
+    background-color: rgb(60, 54, 54);
+    background-color: rgb(176, 20, 20);
+    
+    transform: translateY(-50%);
+   
+    transition: all .4s linear;
+  } */
+
+  nav {
+    display: grid;
+    grid-template-areas:
+      "logo icons"
+      "links links";
+    z-index: 10;
+  }
+
+  .logo {
+    grid-area: logo;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    text-align: right;
+    grid-area: links;
+  }
+
+  .icons {
+    grid-area: icons;
+  }
+
+  #toggeler:checked ~ nav .links {
+    transform: translateY(0);
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
 }
 
 /* glutien FREE */
 .clip {
   position: absolute;
-  top: calc(1% + 100px);
-  right: 1%;
-
+  /* bottom: calc(-1% - 90px); */
+  top: 0;
+  left: 0;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
-  width: 80px;
-  height: 80px;
-  clip-path: polygon(
-    50% 0%,
-    90% 20%,
-    100% 60%,
-    75% 100%,
-    25% 100%,
-    0% 60%,
-    10% 20%
-  );
-  background-color: rgba(92, 92, 88, 0.494);
-  transform: rotate(15deg);
+  width: 45px;
+  height: 45px;
+
+  /* background-color: rgba(92, 92, 88, 0.494); */
+
+  /* animation-name: free-form;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: linear; */
+  transform: rotate(-35deg);
 }
 
-.fa-solid {
+.free {
   font-size: 20px;
   background: #8eff0d;
   background: linear-gradient(
@@ -55,19 +171,61 @@ background-color: rgba(0, 0, 0, 0.415);
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  opacity: 0.7;
+  animation-name: free;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes free {
+  from {
+    font-size: 50px;
+    opacity: 0;
+  }
+
+  to {
+    font-size: 20px;
+    opacity: 0.7;
+  }
+}
+
+@keyframes free-form {
+  from {
+    width: 90px;
+    height: 90px;
+    opacity: 0;
+  }
+
+  to {
+    width: 50px;
+    height: 50px;
+    opacity: 0.7;
+  }
 }
 /*  */
 
-
-
-
-
-
 .container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
+}
+
+.gluten-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  opacity: 0.7;
+
+  animation-name: free-form;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
 }
 
 @media only screen and (max-width: 780px) {
@@ -131,6 +289,11 @@ background-color: rgba(0, 0, 0, 0.415);
   text-transform: uppercase;
   border-radius: 10px 10px 0 0;
   background-color: darkslategrey;
+}
+
+.the-bread {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
 }
 
 .bread {
