@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Bread-Pit</title>
+  </head>
+  <body>
+    <!--Nav -->
+    <input type="checkbox" id="toggeler" />
+    <input type="checkbox" id="lupa" />
+    <nav>
+      <a href="index.html">
+        <div class="logo">
+          <img src="images/bread.png" alt="bread" />
+          <span>Bread-Pit</span>
+        </div>
+      </a>
+
+      <div class="links">
+        <a class="links__a active" href="index.html">Главная</a>
+        <a class="links__a" href="">О нас</a>
+        <a class="links__a" href="">bla-bla</a>
+        <a class="links__a" href="">bla-bla</a>
+      </div>
+
+      <div class="icons">
+        <label for="lupa">
+          <i class="fa-solid fa-magnifying-glass"
+            ><input class="lupa" type="text" placeholder="Search..." />
+          </i>
+        </label>
+
+        <label class="burger" for="toggeler">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+        </label>
+      </div>
+    </nav>
+    <!-- nav End -->
+
+    <div class="under_nav_pic"></div>
+
+    <!-- Name -->
+    <div class="name-link">
+      <h1>Хлеб</h1>
+      <a class="links__a" href="#">Больше</a>
+    </div>
+    <div class="container">
+      <!-- card -->
+      <div class="card">
+        <div class="card__inner">
+          <div class="front face">
+            <div class="heading">
+              <h2>button</h2>
+              <img class="gluten-logo" src="images/gluten-free.png" alt="" />
+            </div>
+
+            <img src="img-bread/4.jpg" alt="bread" class="bread" />
+
+            <div class="description">
+              <p>Для диетического питания</p>
+            </div>
+            <button class="flip flip-me">Доп. Инфо.</button>
+          </div>
+          <div class="back face">
+            <div class="heading">
+              <h2>Полезная информация</h2>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  Ржаной хлеб – это вкусная, полезная, а главное – сытная еда.
+                  Советуется есть его тем, кто хочет похудеть или очистить свой
+                  организм
+                </li>
+                <li>
+                  Для приготовления ржаного хлеба в домашних условиях нам
+                  понадобятся: миска и ложка для замешивания теста, форма для
+                  выпекания, пергаментная бумага.
+                </li>
+                <li>
+                  Берем миску и ложку. Дрожжи перекладываем в миску, добавляем
+                  туда стакан теплой воды и тщательно перемешиваем. Чтобы
+                  перемешать равномерно, вливайте воду частями.
+                </li>
+              </ul>
+            </div>
+            <div class="more-info">
+              <a class="more-info__inner" href="#">Подробнее</a>
+            </div>
+            <button class="flip return">
+              <img src="images/undo.png" alt="back" class="undo" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- card2 -->
+      <div class="card">
+        <div class="card__inner">
+          <div class="front face">
+            <div class="heading">
+              <h2>Ржаной хлеб</h2>
+              <img class="gluten-logo" src="images/gluten-free.png" alt="" />
+            </div>
+
+            <img src="images/123h.jpg" alt="bread" class="bread" />
+
+            <div class="description">
+              <p>диетическом питании</p>
+            </div>
+            <button class="flip flip-me">flip me</button>
+          </div>
+          <div class="back face">
+            <div class="heading">
+              <h2>basic</h2>
+            </div>
+            <div>
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+            </div>
+            <div class="price">
+              <p>12222</p>
+            </div>
+            <button class="flip return">
+              <img src="images/undo.png" alt="back" class="undo" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GIF -->
+    <div class="gifs">
+      <img class="gif" src="gifs/01.gif" alt="">
+      <img class="gif" src="gifs/02.gif" alt="">
+      <img class="gif" src="gifs/03.gif" alt="">
+      <img class="gif" src="gifs/04.gif" alt="">
+    </div>
+    <!-- scripts -->
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
