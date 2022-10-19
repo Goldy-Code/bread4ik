@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,23 +12,25 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <title>Bread-Pit</title>
   </head>
   <body>
     <!--Nav -->
     <input type="checkbox" id="toggeler" />
     <input type="checkbox" id="lupa" />
     <nav>
-      <div class="logo">
-        <img src="images/bread.png" alt="bread" />
-        <span>Buy a Bread this is threat</span>
-      </div>
+      <a href="index.html">
+        <div class="logo">
+          <img src="images/bread.png" alt="bread" />
+          <span>Bread-Pit</span>
+        </div>
+      </a>
 
       <div class="links">
-        <a href="index.html">Home</a>
-        <a href="">About Us</a>
-        <a href="">bla-bla</a>
-        <a href="">bla-bla</a>
+        <a class="links__a active" href="index.html">Главная</a>
+        <a class="links__a" href="">О нас</a>
+        <a class="links__a" href="">bla-bla</a>
+        <a class="links__a" href="">bla-bla</a>
       </div>
 
       <div class="icons">
@@ -45,7 +47,15 @@
         </label>
       </div>
     </nav>
+    <!-- nav End -->
 
+    <div class="under_nav_pic"></div>
+
+    <!-- Name -->
+    <div class="name-link">
+      <h1>Хлеб</h1>
+      <a class="links__a" href="#">Больше</a>
+    </div>
     <div class="container">
       <!-- card -->
       <div class="card">
@@ -53,29 +63,41 @@
           <div class="front face">
             <div class="heading">
               <h2>button</h2>
+              <img class="gluten-logo" src="images/gluten-free.png" alt="" />
             </div>
 
-            <img src="images/123h.jpg" alt="bread" class="bread" />
+            <img src="img-bread/4.jpg" alt="bread" class="bread" />
 
             <div class="description">
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Для диетического питания</p>
             </div>
-            <button class="flip flip-me">flip me</button>
-            <img class="gluten-logo" src="images/gluten-free.png" alt="" />
+            <button class="flip flip-me">Доп. Инфо.</button>
           </div>
           <div class="back face">
             <div class="heading">
-              <h2>basic</h2>
+              <h2>Полезная информация</h2>
             </div>
             <div>
               <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
+                <li>
+                  Ржаной хлеб – это вкусная, полезная, а главное – сытная еда.
+                  Советуется есть его тем, кто хочет похудеть или очистить свой
+                  организм
+                </li>
+                <li>
+                  Для приготовления ржаного хлеба в домашних условиях нам
+                  понадобятся: миска и ложка для замешивания теста, форма для
+                  выпекания, пергаментная бумага.
+                </li>
+                <li>
+                  Берем миску и ложку. Дрожжи перекладываем в миску, добавляем
+                  туда стакан теплой воды и тщательно перемешиваем. Чтобы
+                  перемешать равномерно, вливайте воду частями.
+                </li>
               </ul>
             </div>
-            <div class="price">
-              <p>12222</p>
+            <div class="more-info">
+              <a class="more-info__inner" href="#">Подробнее</a>
             </div>
             <button class="flip return">
               <img src="images/undo.png" alt="back" class="undo" />
@@ -89,51 +111,14 @@
         <div class="card__inner">
           <div class="front face">
             <div class="heading">
-              <h2>button</h2>
+              <h2>Ржаной хлеб</h2>
+              <img class="gluten-logo" src="images/gluten-free.png" alt="" />
             </div>
 
             <img src="images/123h.jpg" alt="bread" class="bread" />
 
             <div class="description">
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <button class="flip flip-me">flip me</button>
-            <!-- watermark -->
-            <div class="clip">
-              <i class="fa-solid fa-wheat-awn-circle-exclamation free"></i>
-              <i class="fa-solid free">free</i>
-            </div>
-          </div>
-          <div class="back face">
-            <div class="heading">
-              <h2>basic</h2>
-            </div>
-            <div>
-              <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-              </ul>
-            </div>
-            <div class="price">
-              <p>12222</p>
-            </div>
-            <button class="flip return">
-              <img src="images/undo.png" alt="back" class="undo" />
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- card3 -->
-      <div class="card">
-        <div class="card__inner">
-          <div class="front face">
-            <div class="the-bread">
-              <img src="images/123h.jpg" alt="bread" class="bread" />
-            </div>
-            <div class="description">
-              <p>Lorem ipsum dolor sit amet.</p>
+              <p>диетическом питании</p>
             </div>
             <button class="flip flip-me">flip me</button>
           </div>
@@ -159,6 +144,57 @@
       </div>
     </div>
 
+    <!-- GIF -->
+    <div class="gifs">
+      <img class="gif" src="gifs/01.gif" alt="" />
+      <img class="gif" src="gifs/02.gif" alt="" />
+      <img class="gif" src="gifs/03.gif" alt="" />
+      <img class="gif" src="gifs/04.gif" alt="" />
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="footer-col">
+            <h4>компания</h4>
+            <ul class="ul-footer">
+              <li><a href="#">о нас</a></li>
+              <li><a href="#">наши услуги</a></li>
+              <li><a href="#">политика конфиденциальности</a></li>
+              <li><a href="#">партнёрская программа</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>помощь</h4>
+            <ul class="ul-footer">
+              <li><a href="#">ФАГ</a></li>
+              <li><a href="#">как сделать заказ</a></li>
+              <li><a href="#">доставка</a></li>
+              <li><a href="#">оплата</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>онлайн магазин</h4>
+            <ul class="ul-footer">
+              <li><a href="#">хлеб</a></li>
+              <li><a href="#">бисквик</a></li>
+              <li><a href="#">булочки</a></li>
+              <li><a href="#">батон</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#" class="facebook"> <i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="twitter"> <i class="fab fa-twitter"></i> </a>
+              <a href="#" class="instagram"> <i class="fab fa-instagram"></i> </a>
+              <a href="#"> <i class="fa-brands fa-linkedin-in"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- scripts -->
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/script.js"></script>
